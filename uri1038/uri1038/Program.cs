@@ -22,8 +22,12 @@ namespace uri1038 {
             else if (codigo == 4) {
                 total = quantidade * 2.0;
             }
-            else {
+            else if (codigo == 5){
                 total = quantidade * 1.5;
+            }
+            else {
+                total = 0;
+                Console.WriteLine($"ITEM CÓDIGO {codigo} NÃO EXISTE.");
             }
 
             Console.WriteLine("Total: R$ " + total.ToString("F2", CultureInfo.InvariantCulture));
